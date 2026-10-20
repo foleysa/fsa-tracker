@@ -33,16 +33,16 @@ h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;color:var(--na
 .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
 .card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 14px;min-width:0}
 .card h2{font-size:.95rem;font-weight:700;color:var(--navy);margin:0}.card .hint{font-size:.78rem;color:var(--mut);margin:2px 0 6px}
-.kpi{grid-column:span 2}.kpi.wide{grid-column:span 4}
+.kpi{grid-column:span 2}.kpi.k1{grid-column:span 3}.kpi.wide{grid-column:span 3}
 .kpi .l{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
-.kpi .v{font-size:1.6rem;font-weight:700;color:var(--navy);line-height:1.15;margin-top:4px;font-variant-numeric:tabular-nums}
+.kpi .v{font-size:1.5rem;font-weight:700;color:var(--navy);line-height:1.15;margin-top:4px;font-variant-numeric:tabular-nums}
 .kpi .s{font-size:.78rem;color:var(--mut);margin-top:2px}
-.kpi .meter{height:6px;background:#E9E4DA;border-radius:3px;margin-top:8px;overflow:hidden}.kpi .meter i{display:block;height:100%;background:var(--gold)}
+.kpi .meter{height:5px;background:#E9E4DA;border-radius:3px;margin-top:5px;overflow:hidden}.kpi .meter i{display:block;height:100%;background:var(--gold)}
 .kpi.ctx{background:var(--navy);color:#fff;border-color:var(--navy)}.kpi.ctx .l,.kpi.ctx .s{color:#D5DCE6}.kpi.ctx .v{color:#fff}
-.spark{display:block;width:100%;height:30px;margin-top:4px}
-.c-tl{grid-column:span 6}.c-ag{grid-column:span 3}.c-rc{grid-column:span 3}.c-na{grid-column:span 12}.c-mk{grid-column:span 12}.c-tb{grid-column:span 12}
+.spark{display:block;width:100%;height:22px;margin-top:4px}
+.c-tl{grid-column:span 6}.c-ag{grid-column:span 6}.c-rc{grid-column:span 6}.c-na{grid-column:span 6}.c-mk{grid-column:span 12}.c-tb{grid-column:span 12}
 /* bar lists (HTML bars = accessible, tappable, no hover needed) */
-.bars{display:flex;flex-direction:column;gap:2px}.bars.na2{display:grid;grid-template-columns:1fr 1fr;column-gap:24px}@media(max-width:760px){.bars.na2{grid-template-columns:1fr}}
+.bars{display:flex;flex-direction:column;gap:2px}.bars.two{display:grid;grid-template-columns:1fr 1fr;column-gap:20px;align-content:start}@media(max-width:760px){.bars.two{grid-template-columns:1fr}}
 .bar{all:unset;box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr) 74px;grid-template-rows:auto 8px;column-gap:10px;row-gap:3px;min-height:44px;padding:3px 6px;border-radius:5px;cursor:pointer;align-content:center}
 .bar:hover{background:#F5F1EA}.bar:focus-visible,.col:focus-visible,.chip:focus-visible,.btn:focus-visible,th button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .bar .n{font-size:.82rem;line-height:1.25;color:var(--tx)}
@@ -51,7 +51,7 @@ h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;color:var(--na
 .bar[aria-pressed=true]{background:#FBF4E2}.bar[aria-pressed=true] .t i{background:var(--gold)}.bar[aria-pressed=true] .n{font-weight:700}
 .bar.zero .n,.bar.zero .v{color:#4A5568}
 /* timeline columns */
-.tl{display:flex;align-items:flex-end;gap:1px;height:232px;padding-top:18px;border-bottom:1px solid #A8A091}
+.tl{display:flex;align-items:flex-end;gap:1px;height:118px;padding-top:18px;border-bottom:1px solid #A8A091}
 .col{all:unset;box-sizing:border-box;flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;cursor:pointer;border-radius:4px 4px 0 0;min-width:44px}
 .col .v{font-size:.7rem;font-weight:600;color:var(--navy);margin-bottom:3px;white-space:nowrap;font-variant-numeric:tabular-nums}
 .col .t{width:calc(100% - 3px);height:calc(var(--p) * .82);min-height:2px;background:var(--bar);border-radius:4px 4px 0 0}
@@ -85,12 +85,12 @@ tr.d td{background:#F8F5EE;padding:12px 16px}
 .notes{font-size:.78rem;color:var(--mut);margin-top:12px;line-height:1.5}
 .empty{padding:16px;color:var(--mut);font-size:.9rem}
 footer{background:#06111F;color:#C9CED6;font-size:.78rem;padding:18px 20px;text-align:center}footer a{color:#E8C566}
-@media(max-width:1180px){.kpi{grid-column:span 4}.kpi.wide{grid-column:span 8}.c-tl,.c-na,.c-mk{grid-column:span 12}.c-ag,.c-rc{grid-column:span 6}.fbar{grid-template-columns:1fr 1fr 1fr}.fbar .srch{grid-column:span 3}}
+@media(max-width:1180px){.kpi,.kpi.k1{grid-column:span 4}.kpi.wide{grid-column:span 8}.c-tl,.c-ag,.c-mk{grid-column:span 12}.c-rc,.c-na{grid-column:span 6}.bars.two{grid-template-columns:1fr}.fbar{grid-template-columns:1fr 1fr 1fr}.fbar .srch{grid-column:span 3}}
 @media(max-width:760px){
  .app{padding:10px 12px 20px}h1{font-size:1.5rem}
  .fbar{grid-template-columns:1fr 1fr;position:static}.fbar .srch,.fbar .ag{grid-column:span 2}
  nav.top .in{padding:4px 8px;gap:0}.tabs a{padding:0 8px;font-size:.68rem;letter-spacing:.06em}.logo{font-size:.74rem}.fbar .act{grid-column:span 2}.fbar .act .btn{flex:1}
- .kpi,.kpi.wide{grid-column:span 6}.kpi.ctx{grid-column:span 12}.kpi .v{font-size:1.35rem}
+ .kpi,.kpi.k1,.kpi.wide{grid-column:span 6}.kpi.ctx{grid-column:span 12}.kpi .v{font-size:1.35rem}
  .c-ag,.c-rc,.c-na,.c-mk{grid-column:span 12}.bar .n{white-space:normal}
  /* timeline turns into horizontal rows on phones so every target is 44px tall and full width */
  .tl{flex-direction:column;align-items:stretch;height:auto;gap:2px;border:0;padding:0}
@@ -124,17 +124,17 @@ footer{background:#06111F;color:#C9CED6;font-size:.78rem;padding:18px 20px;text-
 <p class="summary" id="sum" aria-live="polite"></p>
 
 <div class="grid">
-<section class="card kpi" aria-labelledby="k1l"><div class="l" id="k1l">Total award value of expiring contracts</div><div class="v" id="k1"></div><div class="s" id="k1s"></div><div class="meter" aria-hidden="true"><i id="k1m"></i></div></section>
+<section class="card kpi k1" aria-labelledby="k1l"><div class="l" id="k1l">Total award value of expiring contracts</div><div class="v" id="k1"></div><div class="s" id="k1s"></div><div class="meter" aria-hidden="true"><i id="k1m"></i></div></section>
 <section class="card kpi" aria-labelledby="k2l"><div class="l" id="k2l">Contracts ending</div><div class="v" id="k2"></div><div class="s" id="k2s"></div></section>
 <section class="card kpi" aria-labelledby="k3l"><div class="l" id="k3l">Ending in next 90 days</div><div class="v" id="k3"></div><div class="s" id="k3s"></div></section>
 <section class="card kpi" aria-labelledby="k4l"><div class="l" id="k4l">Top incumbent share</div><div class="v" id="k4"></div><div class="s" id="k4s"></div><div class="meter" aria-hidden="true"><i id="k4m"></i></div></section>
-<section class="card kpi wide ctx" aria-labelledby="k5l"><div class="l" id="k5l">Market context · obligations, last 12 months</div><div class="v" id="k5"></div><div class="s" id="k5s"></div><svg class="spark" id="spark" viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true"></svg></section>
+<section class="card kpi wide ctx" aria-labelledby="k5l"><div class="l" id="k5l">Market context · 12-month obligations</div><div class="v" id="k5"></div><div class="s" id="k5s"></div><svg class="spark" id="spark" viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true"></svg></section>
 
-<section class="card c-tl" aria-labelledby="tlh"><h2 id="tlh">Recompete timeline: total award value ending each month</h2><p class="hint">Click a month to filter; click again to clear. <b>* Striped = partial month</b> (Oct 20–31, 2026 and Oct 1–20, 2027).</p>
+<section class="card c-tl" aria-labelledby="tlh"><h2 id="tlh">Recompete timeline: total award value ending each month</h2><p class="hint">Click a month to filter. <b>* Striped = partial month</b> (Oct 20–31, 2026; Oct 1–20, 2027).</p>
 <div class="tl" id="tl" role="group" aria-label="Months"></div><div class="tlx" id="tlx" aria-hidden="true"></div><div class="qband" id="qb" aria-hidden="true"></div></section>
-<section class="card c-ag" aria-labelledby="agh"><h2 id="agh">Top agencies</h2><p class="hint">By expiring award value. Click to filter.</p><div class="bars" id="ag" role="group" aria-label="Agencies"></div></section>
-<section class="card c-rc" aria-labelledby="rch"><h2 id="rch">Top incumbents</h2><p class="hint">Reported legal entities, not rolled up to parents. Click to filter.</p><div class="bars" id="rc" role="group" aria-label="Incumbents"></div></section>
-<section class="card c-na" aria-labelledby="nah"><h2 id="nah">By NAICS code</h2><p class="hint">Click a code to filter.</p><div class="bars na2" id="na" role="group" aria-label="NAICS codes"></div></section>
+<section class="card c-ag" aria-labelledby="agh"><h2 id="agh">Top agencies</h2><p class="hint">By expiring award value. Click to filter; gold = selected.</p><div class="bars two" id="ag" role="group" aria-label="Agencies"></div></section>
+<section class="card c-rc" aria-labelledby="rch"><h2 id="rch">Top incumbents</h2><p class="hint">Legal entities as reported, not rolled up. Click to filter.</p><div class="bars two" id="rc" role="group" aria-label="Incumbents"></div></section>
+<section class="card c-na" aria-labelledby="nah"><h2 id="nah">By NAICS code</h2><p class="hint">Top 6 of 9 codes; all 9 are in the filter. Click to filter.</p><div class="bars two" id="na" role="group" aria-label="NAICS codes"></div></section>
 
 
 <section class="card c-tb" aria-labelledby="tbh"><div class="tbar"><div><h2 id="tbh">Contracts in the pipeline</h2><p class="hint" id="cnt" aria-live="polite" style="margin:2px 0 0"></p></div><label class="srtl"><span class="lb">Sort by</span><select id="srt"><option value="0,1">End date (soonest)</option><option value="0,-1">End date (latest)</option><option value="5,-1">Award value (largest)</option><option value="5,1">Award value (smallest)</option><option value="2,1">Incumbent (A–Z)</option><option value="3,1">Agency (A–Z)</option></select></label></div>
@@ -187,7 +187,7 @@ function market(){const T=DATA.tr;const lab=t=>{const m=t[1],cm=(m+8)%12,cy=m<=3
  $('mkx').innerHTML=T.map(t=>`<span>${lab(t)}</span>`).join('');
  $('mkl').innerHTML=`<span>Peak: ${lg(T[mi])}, ${fm(T[mi][2])} (bronze bar)</span><span>Scale starts at $0</span>`;
  const sp=T.map((t,i)=>(i*300/(T.length-1)).toFixed(1)+','+(28-(t[2]/mx)*26).toFixed(1)).join(' ');$('spark').innerHTML=`<polyline points="${sp}" fill="none" stroke="#D4A843" stroke-width="2" vector-effect="non-scaling-stroke"/>`;
- $('k5').textContent=fm(DATA.tot);$('k5s').textContent=fm(DATA.tot-DATA.ami)+' excluding the single AMI Metals steel award · monthly detail below the table';}
+ $('k5').textContent=fm(DATA.tot);$('k5s').textContent=fm(DATA.tot-DATA.ami)+' without the one AMI Metals steel award · detail below table';}
 let sk=0,sd=1,pg=0,open=null;let PS=matchMedia('(max-width:760px)').matches?10:25;
 function table(rows){const R=rows.slice().sort((a,b)=>{const K=['end','id','rec','ag','na','amt'][sk];return(a[K]>b[K]?1:a[K]<b[K]?-1:0)*sd});
  const np=Math.max(1,Math.ceil(R.length/PS));pg=Math.min(pg,np-1);const tot=rows.reduce((s,r)=>s+r.amt,0);
@@ -199,15 +199,15 @@ function table(rows){const R=rows.slice().sort((a,b)=>{const K=['end','id','rec'
  $('pg').textContent=`Page ${pg+1} of ${np}`;$('pv').disabled=pg==0;$('nx').disabled=pg>=np-1;}
 function kpis(rows){const v=rows.reduce((s,r)=>s+r.amt,0);const n90=rows.filter(r=>r.days<=90);const v90=n90.reduce((s,r)=>s+r.amt,0);const inc=group(rows,'rec');
  $('k1').textContent=fm(v);$('k1s').textContent='Lifetime value, not remaining · a floor: top '+DATA.scan.toLocaleString()+' of '+DATA.ncon.toLocaleString()+' scanned'+(v<ALL?' · '+(v/ALL*100).toFixed(1)+'% of '+fm(ALL):'');$('k1m').style.width=(v/ALL*100)+'%';
- $('k2').textContent=rows.length.toLocaleString();const na=group(rows,'ag').length;$('k2s').textContent='At least (top '+DATA.scan.toLocaleString()+' of '+DATA.ncon.toLocaleString()+' scanned) · '+inc.length.toLocaleString()+(inc.length==1?' incumbent · ':' incumbents · ')+na+(na==1?' agency':' agencies');
+ $('k2').textContent=rows.length.toLocaleString();const na=group(rows,'ag').length;$('k2s').textContent='At least (top '+DATA.scan.toLocaleString()+' of '+DATA.ncon.toLocaleString()+' scanned); '+inc.length.toLocaleString()+(inc.length==1?' incumbent':' incumbents');
  $('k3').textContent=fm(v90);$('k3s').textContent=n90.length+' contracts end by '+new Date(ASOF.getTime()+90*DAY).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
  const t=inc[0];$('k4').textContent=t&&v?(t.v/v*100).toFixed(0)+'%':'–';$('k4s').textContent=t?t.k+' · '+fm(t.v):'No contracts';$('k4m').style.width=t&&v?(t.v/v*100)+'%':'0';
  const ag=group(rows,'ag')[0],mo=group(rows,'ym')[0];
- $('sum').textContent=rows.length?`${Object.values(S).some(x=>x)?'':'Whole 12-month pipeline, from the top '+DATA.scan.toLocaleString()+' of '+DATA.ncon.toLocaleString()+' contracts scanned (click any bar or month to filter): '}${rows.length.toLocaleString()} contracts with ${fm(v)} in total (lifetime) award value end in this view. The biggest month is ${ymLong(mo.k)} (${fm(mo.v)}); ${ag.k} holds the most value (${fm(ag.v)}); ${t.k} is the largest incumbent (${(t.v/v*100).toFixed(0)}%).`:'No contracts match these filters.';}
+ $('sum').textContent=rows.length?`${Object.values(S).some(x=>x)?'This view':'Whole pipeline'}: ${rows.length.toLocaleString()} contracts, ${fm(v)} lifetime award value. Peak month ${ymLong(mo.k)} (${fm(mo.v)}); top agency ${ag.k} (${fm(ag.v)}); top incumbent ${t.k} (${(t.v/v*100).toFixed(0)}%).`:'No contracts match these filters.';}
 function chips(){const c=Object.keys(S).filter(k=>S[k]);$('chips').innerHTML=c.length?'<span>Filtered by:</span>'+c.map(k=>`<button type="button" class="chip" data-k="${k}" data-v="" aria-label="Remove filter ${LBL[k]}: ${esc(k=='ym'?ymLong(S[k]):S[k])}">${LBL[k]}: ${esc(k=='ym'?ymLong(S[k]):k=='na'?S[k]:S[k])}<b aria-hidden="true">×</b></button>`).join(''):'';}
 function hash(){const p=new URLSearchParams();Object.keys(S).forEach(k=>S[k]&&p.set(k,S[k]));history.replaceState(null,'',p.toString()?'#'+p:location.pathname)}
 function render(){const rows=EX.filter(r=>match(r));kpis(rows);
- bars('ag','ag',EX.filter(r=>match(r,'ag')),7,x=>x);bars('rc','rec',EX.filter(r=>match(r,'rec')),7,x=>x);bars('na','na',EX.filter(r=>match(r,'na')),9,nl);
+ bars('ag','ag',EX.filter(r=>match(r,'ag')),6,x=>x);bars('rc','rec',EX.filter(r=>match(r,'rec')),6,x=>x);bars('na','na',EX.filter(r=>match(r,'na')),6,nl);
  timeline(EX.filter(r=>match(r,'ym')));table(rows);chips();$('fq').value!==S.q&&($('fq').value=S.q);$('fa').value=S.ag;$('fn').value=S.na;$('fp').value=S.fq;hash();}
 function set(k,v){const prev=document.activeElement&&document.activeElement.dataset;const fk=prev&&prev.k,fv=prev&&prev.v;S[k]=(S[k]==v?'':v);pg=0;open=null;render();
  if(fk){const el=document.querySelector(`[data-k="${fk}"][data-v="${CSS.escape(fv||'')}"]`);if(el&&el.focus)el.focus();}}
