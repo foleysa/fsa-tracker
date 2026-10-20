@@ -1,0 +1,112 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Federal Supply Chain &amp; Logistics Contract Tracker | Foley Strategic Advisory</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 fill=%27%230B1D33%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-size=%2716%27 text-anchor=%27middle%27 fill=%27%23D4A843%27 font-family=%27Georgia%27%3EF%3C/text%3E%3C/svg%3E"><meta name="description" content="Free tracker of federal supply chain, procurement, distribution and logistics contract spending, built from public government data by Foley Strategic Advisory.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"><style>
+:root{--navy:#0B1D33;--navy-deep:#06111F;--gold:#D4A843;--gold-light:#E8C566;--cream:#F5F1EA;--cream-dark:#E8E1D4;--white:#FAFAF8;--slate:#4A5568;--slate-light:#4A5568;--line:#E3DDD1}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Inter,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--slate);background:var(--white);line-height:1.6;font-size:16px}
+a{color:var(--navy);text-decoration-color:var(--gold);text-underline-offset:3px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;color:var(--navy);line-height:1.15;margin:0 0 .5em;font-weight:600}
+h2{font-size:clamp(1.6rem,3vw,2.2rem)}h3{font-size:1.3rem}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+nav.top{position:sticky;top:0;z-index:10;background:rgba(11,29,51,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(212,168,67,.25)}
+nav.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap}
+.logo{font-family:Georgia,serif;letter-spacing:.18em;font-size:.85rem;color:var(--cream);text-decoration:none;white-space:nowrap}.logo span{color:var(--gold)}
+.tabs{display:flex;gap:4px;flex-wrap:wrap}
+.tabs a{color:rgba(245,241,234,.8);text-decoration:none;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:10px 12px;border-bottom:2px solid transparent}
+.tabs a:hover{color:#fff}.tabs a.on{color:var(--gold);border-bottom-color:var(--gold)}
+.hero{background:linear-gradient(160deg,var(--navy-deep),var(--navy));color:var(--cream);padding:72px 0 56px}
+.hero h1{color:var(--cream);font-size:clamp(2.1rem,5vw,3.6rem);max-width:900px}
+.eyebrow{color:var(--gold);font-size:.75rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px}
+.dek{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:clamp(1.15rem,2vw,1.4rem);color:rgba(245,241,234,.8);max-width:760px}
+.stamp{display:inline-block;margin-top:18px;font-size:.8rem;color:var(--gold-light);border:1px solid rgba(212,168,67,.4);padding:6px 12px;border-radius:999px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;background:var(--gold);color:var(--navy-deep);font-weight:700;text-decoration:none;padding:12px 22px;border-radius:4px;font-size:.9rem}
+.btn.ghost{background:transparent;color:var(--cream);border:1px solid rgba(245,241,234,.4)}
+section{padding:56px 0}section.alt{background:var(--cream)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:-36px}
+.kpi{background:#fff;border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:6px;padding:18px 20px;box-shadow:0 6px 20px rgba(6,17,31,.06)}
+.kpi .v{font-family:"Cormorant Garamond",Georgia,serif;font-size:2.3rem;font-weight:600;color:var(--navy);line-height:1}
+.kpi .l{font-size:.85rem;margin-top:8px}.kpi .s{font-size:.75rem;color:var(--slate-light);margin-top:4px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:20px;min-width:0}
+.card p.sub{font-size:.85rem;color:#4A5568;margin:-.3em 0 1em}
+.chart{position:relative;height:380px}.chart.tall{height:620px}
+.note{background:#fff;border-left:4px solid var(--gold);padding:14px 18px;font-size:.92rem;border-radius:0 6px 6px 0;margin:16px 0}
+.note.warn{background:#FFF8E6}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;padding:0;list-style:none}
+.steps li{background:#fff;border:1px solid var(--line);border-radius:6px;padding:20px;position:relative}
+.steps li::before{counter-increment:s;content:counter(s);font-family:"Cormorant Garamond",Georgia,serif;font-size:2rem;color:var(--gold);font-weight:600;display:block;line-height:1;margin-bottom:8px}
+.steps b{color:var(--navy)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:20px}
+.tile{display:block;background:#fff;border:1px solid var(--line);border-radius:6px;padding:26px;text-decoration:none;color:var(--slate);transition:box-shadow .2s}
+.tile:hover{box-shadow:0 8px 28px rgba(6,17,31,.1)}.tile h3{margin-bottom:.3em}.tile .go{color:var(--navy);font-weight:700;font-size:.85rem}
+.controls{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.controls input,.controls select{font:inherit;font-size:.9rem;padding:10px 12px;border:1px solid #CFC8BA;border-radius:4px;background:#fff;color:var(--navy);min-width:0}
+.controls input{flex:1 1 260px}.controls select{flex:0 1 220px;max-width:100%}
+.count{font-size:.85rem;color:var(--slate-light);margin:4px 0 10px}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+th{background:var(--navy);color:var(--cream);text-align:left;font-weight:600;padding:10px 12px;white-space:nowrap;cursor:pointer;user-select:none;position:sticky;top:0}
+th[aria-sort=ascending]::after{content:" ▲";color:var(--gold)}th[aria-sort=descending]::after{content:" ▼";color:var(--gold)}
+td{padding:9px 12px;border-bottom:1px solid #EEE9DF;vertical-align:top}td.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+tbody tr:nth-child(even){background:#FCFBF8}
+.pill{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--cream-dark);color:var(--navy);white-space:nowrap}.pill.open{background:#DDEFE2;color:#1B5E34}
+.pager{display:flex;gap:8px;align-items:center;justify-content:flex-end;margin-top:10px;font-size:.85rem;flex-wrap:wrap}
+.pager button,.dl{font:inherit;font-size:.85rem;background:#fff;border:1px solid #CFC8BA;color:var(--navy);padding:8px 14px;border-radius:4px;cursor:pointer;text-decoration:none;display:inline-block}
+.pager button:disabled{opacity:.4;cursor:default}
+dl.meth{display:grid;grid-template-columns:200px 1fr;gap:10px 20px;font-size:.92rem}dl.meth dt{font-weight:700;color:var(--navy)}dl.meth dd{margin:0}
+footer{background:var(--navy-deep);color:#B8BDC6;font-size:.8rem;padding:28px 0}footer a{color:var(--gold-light)}
+@media(max-width:700px){
+ .wrap{padding:0 16px}.hero{padding:44px 0 52px}section{padding:40px 0}
+ nav.top .wrap{padding-top:10px;padding-bottom:4px;gap:4px}.tabs a{padding:8px 8px;font-size:.68rem}
+ .chart{height:380px}.chart.tall{height:860px}a,button,select,input,.tabs a{min-height:44px;box-sizing:border-box}td a,.tabs a,footer a,.meth a,.note a,.tile .go{display:inline-flex;align-items:center;min-height:44px;padding:0 4px}dl.meth{grid-template-columns:1fr}dl.meth dt{margin-top:8px}
+ table.cards thead{display:none}table.cards,table.cards tbody,table.cards tr,table.cards td{display:block;width:100%}
+ table.cards tr{border-bottom:1px solid var(--line);padding:10px 4px}table.cards td{border:0;padding:3px 10px;text-align:left}
+ table.cards td::before{content:attr(data-l);display:block;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--slate-light)}
+ table.cards td.num{text-align:left}
+}
+.kpi .s,.card .sub,.sub,.note{color:#4A5568}.tile .eyebrow,section .eyebrow{color:#7A5A0C}.hero .eyebrow{color:var(--gold)}</style></head><body>
+<nav class="top" aria-label="Tracker"><div class="wrap"><a class="logo" href="https://foleystrategicadvisory.com/">FOLEY <span>STRATEGIC</span> ADVISORY</a><div class="tabs"><a href="index.html" class=on aria-current=page>Overview</a><a href="dashboard.html">Dashboard</a><a href="index.html#methods">Sources &amp; Methods</a></div></div></nav>
+<main>
+<header class="hero"><div class="wrap"><div class="eyebrow">FSA Open-Data Tracker</div>
+<h1>Federal Supply Chain &amp; Logistics Contract Tracker</h1>
+<p class="dek">Who the federal government is paying for supply chain, procurement, distribution and logistics work, which contracts come up for recompete in the next twelve months. </p>
+<span class="stamp">Data refreshed October 20, 2026, 11:12 a.m. CT</span>
+<div class="btns"><a class="btn" href="dashboard.html">Explore contract spending</a></div></div></header>
+<div class="wrap"><div class="kpis">
+<div class="kpi"><div class="v">$17.57B</div><div class="l">Obligated in the last 12 months</div><div class="s">$15.55B excluding the AMI Metals award</div></div>
+<div class="kpi"><div class="v">1,857</div><div class="l">Contracts expiring by Oct 20, 2027</div><div class="s">Found in the top 4,000 of 21,906; true count is higher</div></div>
+
+
+</div></div>
+<section><div class="wrap"><h2>Explore the data</h2><div class="tiles">
+<a class="tile" href="dashboard.html"><div class="eyebrow">Interactive dashboard</div><h3>The 12-month recompete pipeline</h3><p>Filter all 1,857 expiring contracts by agency, NAICS and fiscal quarter, click any chart to cross-filter, and drill into each award on USAspending.</p><span class="go">Open the dashboard →</span></a>
+
+</div></div></section>
+<section class="alt" id="how"><div class="wrap"><h2>How to use this tracker</h2><p>Built for buyers, primes, suppliers and small businesses working in federal logistics and supply chain.</p>
+<ol class="steps">
+<li><b>Size the market.</b> Use the spending by industry code chart to see how much the government spends on the work you do, and which agencies spend it.</li>
+<li><b>Find recompetes early.</b> Sort the expiring-contracts table by end date or filter by agency. A contract ending in 6 to 12 months is often re-solicited before it ends.</li>
+<li><b>Know the incumbents.</b> The top recipients chart and each award's USAspending link show who holds the work today and how large their contracts are.</li>
+
+</ol>
+<p class="note">Always confirm details on the official notice or award record before acting. This tracker summarizes public data and is not an official government source.</p></div></section>
+<p class="note">Curated opportunity tracking is available to FSA clients; contact <a href="https://foleystrategicadvisory.com/">Foley Strategic Advisory</a>.</p>
+<section id="methods"><div class="wrap"><h2>Sources &amp; methods</h2>
+<dl class="meth">
+<dt>Spending data</dt><dd><a href="https://www.usaspending.gov">USAspending.gov</a> public API (<a href="https://api.usaspending.gov">api.usaspending.gov</a>), U.S. Department of the Treasury. Pulled October 20, 2026, 11:12 a.m. CT (2026-10-20 16:12 UTC).</dd>
+<dt>Window</dt><dd>Award actions 2025-10-20 to 2026-10-20 (action date). Contract award types A–D only. Amounts are obligations reported in that window.</dd>
+<dt>Industry codes (NAICS)</dt><dd>541614, 541611, 541618, 541690, 488510, 493110, 4841, 4842.</dd>
+<dt>Expiring contracts</dt><dd>Contracts with activity in the window whose current period-of-performance end date falls 2026-10-20 to 2027-10-20, from the top 4,000 of 21,906 contracts by award amount.</dd>
+
+<dt>Downloads</dt><dd><a href="expiring_contracts.csv">expiring_contracts.csv</a> · <a href="summary.csv">summary.csv</a></dd>
+<dt>Known limits</dt><dd><ul>
+<li><b>One award skews the total.</b> AMI Metals, Inc.'s $2.02B (11.5% of the total) is a single DHS / U.S. Customs and Border Protection award, <a href="https://www.usaspending.gov/search/?query=70B01C26C00000006">70B01C26C00000006</a> ("BULK STEEL FOR SOUTHWEST BORDER BARRIER CONSTRUCTION PROJECTS"), a bulk-steel buy for border-barrier construction coded under NAICS 541614 (logistics consulting). It is not typical logistics-services spending and it moves DHS to the #1 agency. Totals are shown with and without it; charts include it.</li>
+<li><b>Expiring count is a floor.</b> 1,857 expiring contracts were found among the top 4,000 of 21,906 contracts by award amount with activity in the window. The remaining contracts were not scanned, so the true count is higher.</li>
+<li><b>Fiscal months.</b> Monthly figures use federal fiscal months (FY M1 = October); the first and last months are partial.</li>
+<li><b>DoD reporting lag.</b> Recent months may be incomplete: Department of Defense contract data posts to USAspending about 90 days late.</li>
+
+<li><b>NAICS 484</b> is covered through its 4-digit parts 4841 and 4842 (the API accepts only 2/4/6-digit codes).</li></ul></dd>
+</dl></div></section></main>
+<footer><div class="wrap">© 2026 Foley Strategic Advisory LLC · Built from free public government data (USAspending.gov) · Not an official government product · Data refreshed October 20, 2026, 11:12 a.m. CT</div></footer>
+</body></html>
