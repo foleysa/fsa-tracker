@@ -40,8 +40,9 @@ h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;color:var(--na
 .kpi .meter{height:5px;background:#E9E4DA;border-radius:3px;margin-top:5px;overflow:hidden}.kpi .meter i{display:block;height:100%;background:var(--gold)}
 .kpi.ctx{background:var(--navy);color:#fff;border-color:var(--navy)}.kpi.ctx .l,.kpi.ctx .s{color:#D5DCE6}.kpi.ctx .v{color:#fff}
 .spark{display:block;width:100%;height:22px;margin-top:4px}
-.c-tl{grid-column:span 7}.c-ag{grid-column:span 5}.c-rc{grid-column:span 6}.c-na{grid-column:span 6}.c-mk{grid-column:span 12}.c-tb{grid-column:span 12}
+.c-tl{grid-column:span 8}.c-ag{grid-column:span 4}.c-rc{grid-column:span 6}.c-na{grid-column:span 6}.c-mk{grid-column:span 12}.c-tb{grid-column:span 12}
 /* bar lists (HTML bars = accessible, tappable, no hover needed) */
+.ch{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px}.ch .btn{min-height:44px;padding:0 12px;font-size:1rem}.h2s{font-weight:500;color:var(--mut);font-size:1rem}
 .bars{display:flex;flex-direction:column;gap:2px}.bars.two{display:grid;grid-template-columns:1fr 1fr;column-gap:20px;align-content:start}@media(max-width:760px){.bars.two{grid-template-columns:1fr}}
 .bar{all:unset;box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr) 80px;grid-template-rows:auto 8px;column-gap:10px;row-gap:3px;min-height:44px;padding:3px 6px;border-radius:5px;cursor:pointer;align-content:center}
 .bar:hover{background:#F5F1EA}.bar:focus-visible,.col:focus-visible,.chip:focus-visible,.btn:focus-visible,th button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
@@ -53,13 +54,13 @@ h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;color:var(--na
 /* timeline columns */
 .tl{display:flex;align-items:flex-end;gap:1px;height:96px;padding-top:18px;border-bottom:1px solid #A8A091}
 .col{all:unset;box-sizing:border-box;flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;cursor:pointer;border-radius:4px 4px 0 0;min-width:44px}
-.col .v{font-size:.8125rem;font-weight:600;color:var(--navy);margin-bottom:3px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.col .v{font-size:1rem;font-weight:600;color:var(--navy);margin-bottom:3px;white-space:nowrap;font-variant-numeric:tabular-nums}
 .col .t{width:calc(100% - 3px);height:calc(var(--p) * .82);min-height:2px;background:var(--bar);border-radius:4px 4px 0 0}
 .col:hover .t{background:var(--navy2)}.col.part .t{background:repeating-linear-gradient(135deg,var(--bar) 0 5px,#5A7393 5px 8px)}.col[aria-pressed=true] .t{background:var(--gold)}
 .col .q{display:none}
-.tlx{display:flex;gap:1px;margin-top:4px}.tlx span{flex:1;text-align:center;font-size:.8125rem;color:var(--mut);min-width:0;white-space:nowrap;overflow:hidden}
+.tlx{display:flex;gap:1px;margin-top:4px}.tlx span{flex:1;text-align:center;font-size:1rem;line-height:1.1;color:var(--mut);min-width:0}
 .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:1rem;color:var(--mut);margin-top:8px}
-.qband{display:flex;gap:1px;margin-top:6px}.qband span{font-size:.8125rem;font-weight:700;color:var(--goldtx);border-top:2px solid var(--gold);padding-top:2px;text-align:center}
+.qband{display:flex;gap:1px;margin-top:6px}.qband span{font-size:1rem;font-weight:700;color:var(--goldtx);border-top:2px solid var(--gold);padding-top:2px;text-align:center}
 /* market line */
 .mkt{height:220px}.mkt .col{cursor:default}.mkt .col:hover .t{background:var(--bar)}
 /* table */
@@ -97,7 +98,7 @@ footer{background:#06111F;color:#C9CED6;font-size:.78rem;padding:18px 20px;text-
  .col{flex-direction:row;justify-content:flex-start;align-items:center;height:auto;min-height:44px;gap:10px;padding:0 6px;border-radius:5px}
  .col .q{display:block;width:62px;flex:none;font-size:.8rem;color:var(--tx)}
  .col .t{order:2;flex:1;height:8px;min-height:8px;max-width:calc(var(--p));border-radius:4px;background:var(--bar)}
- .col .v{order:3;margin:0;font-size:.8rem;width:64px;text-align:right}
+ .col .v{order:3;margin:0;font-size:1rem;width:64px;text-align:right}
  .col[aria-pressed=true]{background:#FBF4E2}
  .tlx,.qband{display:none}
  table.cards thead{display:none}table.cards,table.cards tbody,table.cards tr,table.cards td{display:block;width:100%}
@@ -160,11 +161,11 @@ footer{background:#06111F;color:#C9CED6;font-size:.78rem;padding:18px 20px;text-
 <section class="card kpi" aria-labelledby="k4l"><div class="l" id="k4l">Top incumbent share</div><div class="v" id="k4"></div><div class="s" id="k4s"></div></section>
 
 
-<section class="card c-tl" aria-labelledby="tlh"><h2 id="tlh">Recompete timeline: total award value ending each month</h2><p class="hint">Click a month to filter. <b>* Striped = partial month</b> (Oct 20–31, 2026; Oct 1–20, 2027).</p>
+<section class="card c-tl" aria-labelledby="tlh"><h2 id="tlh">Recompete timeline: total award value ending each month</h2><p class="hint">Click any month or bar to filter; gold = selected. <b>* Striped = partial month</b> (Oct 20–31, 2026; Oct 1–20, 2027).</p>
 <div class="tl" id="tl" role="group" aria-label="Months"></div><div class="tlx" id="tlx" aria-hidden="true"></div><div class="qband" id="qb" aria-hidden="true"></div></section>
-<section class="card c-ag" aria-labelledby="agh"><h2 id="agh">Top agencies</h2><p class="hint">By expiring award value. Click to filter; gold = selected.</p><div class="bars" id="ag" role="group" aria-label="Agencies"></div></section>
-<section class="card c-rc" aria-labelledby="rch"><h2 id="rch">Top incumbents</h2><p class="hint">Legal entities as reported, not rolled up. Click to filter.</p><div class="bars two" id="rc" role="group" aria-label="Incumbents"></div></section>
-<section class="card c-na" aria-labelledby="nah"><h2 id="nah">By NAICS code</h2><p class="hint">Top 4 of 9 codes; all 9 are in the filter.</p><div class="bars two" id="na" role="group" aria-label="NAICS codes"></div></section>
+<section class="card c-ag" aria-labelledby="agh"><div class="ch"><h2 id="agh">Top agencies</h2><button type="button" class="btn more" data-more="ag" aria-expanded="false" aria-controls="ag">Show top 10</button></div><div class="bars" id="ag" role="group" aria-label="Agencies"></div></section>
+<section class="card c-rc" aria-labelledby="rch"><div class="ch"><h2 id="rch">Top incumbents <span class="h2s">(legal entities as reported)</span></h2><button type="button" class="btn more" data-more="rec" aria-expanded="false" aria-controls="rc">Show top 10</button></div><div class="bars two" id="rc" role="group" aria-label="Incumbents"></div></section>
+<section class="card c-na" aria-labelledby="nah"><div class="ch"><h2 id="nah">By NAICS code</h2><button type="button" class="btn more" data-more="na" aria-expanded="false" aria-controls="na">Show all 9</button></div><div class="bars two" id="na" role="group" aria-label="NAICS codes"></div></section>
 
 
 <section class="card c-tb" aria-labelledby="tbh"><div class="tbar"><div><h2 id="tbh">Contracts in the pipeline</h2><p class="summary" id="sum" aria-live="polite"></p><p class="hint" id="cnt" aria-live="polite" style="margin:2px 0 0"></p></div><label class="srtl"><span class="lb">Sort by</span><select id="srt"><option value="0,1">End date (soonest)</option><option value="0,-1">End date (latest)</option><option value="5,-1">Award value (largest)</option><option value="5,1">Award value (smallest)</option><option value="2,1">Incumbent (A–Z)</option><option value="3,1">Agency (A–Z)</option></select></label></div>
@@ -209,7 +210,7 @@ function bars(el,key,rows,n,label){let g=group(rows,key);const sel=S[key];let to
 const MONTHS=[...new Set(EX.map(r=>r.ym))].sort();
 function timeline(rows){const g=new Map(MONTHS.map(m=>[m,{v:0,n:0}]));rows.forEach(r=>{const x=g.get(r.ym);x.v+=r.amt;x.n++});const mx=Math.max(1,...[...g.values()].map(x=>x.v));
  $('tl').innerHTML=MONTHS.map(m=>{const x=g.get(m);const p=(x.v/mx*100).toFixed(1);const pt=(m==MONTHS[0]||m==MONTHS[MONTHS.length-1]);return `<button type="button" class="col${pt?' part':''}" aria-pressed="${S.ym==m}" data-k="ym" data-v="${m}" aria-label="${ymLong(m)}${pt?' (partial month)':''}: ${fm(x.v)}, ${x.n} contracts${S.ym==m?', selected':''}" style="--p:${p}%"><span class="q">${ymL(m)}${pt?'*':''}</span><span class="v">${x.v?fmS(x.v):'–'}</span><span class="t"></span></button>`}).join('');
- $('tlx').innerHTML=MONTHS.map((m,i)=>`<span>${ymL(m)}${i==0||i==MONTHS.length-1?'*':''}</span>`).join('');
+ $('tlx').innerHTML=MONTHS.map((m,i)=>`<span>${ymL(m).split(' ')[0]}<br>${ymL(m).split(' ')[1]}${i==0||i==MONTHS.length-1?'*':''}</span>`).join('');
  const qs=[];MONTHS.forEach(m=>{const r=EX.find(e=>e.ym==m);const l=r.fq;if(qs.length&&qs[qs.length-1].l==l)qs[qs.length-1].n++;else qs.push({l,n:1})});
  $('qb').innerHTML=qs.map(q=>`<span style="flex:${q.n}">${q.n>1?q.l:q.l.slice(0,4)}</span>`).join('');}
 function market(){const T=DATA.tr;const lab=t=>{const m=t[1],cm=(m+8)%12,cy=m<=3?t[0]-1:t[0];return MN[cm]+' '+String(cy).slice(2)};const lg=t=>{const m=t[1],cm=(m+8)%12,cy=m<=3?t[0]-1:t[0];return MN[cm]+' '+cy};
@@ -219,7 +220,7 @@ function market(){const T=DATA.tr;const lab=t=>{const m=t[1],cm=(m+8)%12,cy=m<=3
  $('mkl').innerHTML=`<span>Peak: ${lg(T[mi])}, ${fm(T[mi][2])} (bronze bar)</span><span>Scale starts at $0</span>`;
  
  $('mkt5').textContent=fm(DATA.tot)+' obligated in the last 12 months ('+fm(DATA.tot-DATA.ami)+' without the one AMI Metals steel award).';}
-let sk=0,sd=1,pg=0,open=null;let PS=matchMedia('(max-width:760px)').matches?10:25;
+const MORE={ag:0,rec:0,na:0};let sk=0,sd=1,pg=0,open=null;let PS=matchMedia('(max-width:760px)').matches?10:25;
 function table(rows){const R=rows.slice().sort((a,b)=>{const K=['end','id','rec','ag','na','amt'][sk];return(a[K]>b[K]?1:a[K]<b[K]?-1:0)*sd});
  const np=Math.max(1,Math.ceil(R.length/PS));pg=Math.min(pg,np-1);const tot=rows.reduce((s,r)=>s+r.amt,0);
  $('tb').tBodies[0].innerHTML=R.length?R.slice(pg*PS,pg*PS+PS).map(r=>{const o=open==r.u;const inc=EX.filter(e=>e.rec==r.rec);const incV=inc.reduce((s,e)=>s+e.amt,0);
@@ -238,12 +239,13 @@ function kpis(rows){const v=rows.reduce((s,r)=>s+r.amt,0);const n90=rows.filter(
 function chips(){const c=Object.keys(S).filter(k=>S[k]);$('chips').innerHTML=c.length?'<span>Filtered by:</span>'+c.map(k=>`<button type="button" class="chip" data-k="${k}" data-v="" aria-label="Remove filter ${LBL[k]}: ${esc(k=='ym'?ymLong(S[k]):S[k])}">${LBL[k]}: ${esc(k=='ym'?ymLong(S[k]):k=='na'?S[k]:S[k])}<b aria-hidden="true">×</b></button>`).join(''):'';}
 function hash(){const p=new URLSearchParams();Object.keys(S).forEach(k=>S[k]&&p.set(k,S[k]));history.replaceState(null,'',p.toString()?'#'+p:location.pathname)}
 function render(){const rows=EX.filter(r=>match(r));kpis(rows);
- bars('ag','ag',EX.filter(r=>match(r,'ag')),4,x=>x);bars('rc','rec',EX.filter(r=>match(r,'rec')),4,x=>x);bars('na','na',EX.filter(r=>match(r,'na')),4,nl);
+ bars('ag','ag',EX.filter(r=>match(r,'ag')),MORE.ag?10:4,x=>x);bars('rc','rec',EX.filter(r=>match(r,'rec')),MORE.rec?10:4,x=>x);bars('na','na',EX.filter(r=>match(r,'na')),MORE.na?9:4,nl);
  timeline(EX.filter(r=>match(r,'ym')));table(rows);chips();$('fq').value!==S.q&&($('fq').value=S.q);$('fa').value=S.ag;$('fn').value=S.na;$('fp').value=S.fq;hash();}
 function set(k,v){const prev=document.activeElement&&document.activeElement.dataset;const fk=prev&&prev.k,fv=prev&&prev.v;S[k]=(S[k]==v?'':v);pg=0;open=null;render();
  if(fk){const el=document.querySelector(`[data-k="${fk}"][data-v="${CSS.escape(fv||'')}"]`);if(el&&el.focus)el.focus();}}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-k][data-v]');if(b&&!b.closest('th')){if(b.classList.contains('chip')){S[b.dataset.k]='';pg=0;render();const n=document.querySelector('.chip')||$('fq');n.focus();return}set(b.dataset.k,b.dataset.v);return}
  const x=e.target.closest('.xp');if(x){open=open==x.dataset.id?null:x.dataset.id;table(EX.filter(r=>match(r)));const n=document.querySelector(`.xp[data-id="${CSS.escape(x.dataset.id)}"]`);n&&n.focus();}});
+document.querySelectorAll('[data-more]').forEach(b=>b.onclick=()=>{const k=b.dataset.more;MORE[k]=!MORE[k];b.setAttribute('aria-expanded',!!MORE[k]);b.textContent=MORE[k]?'Show top 4':(k=='na'?'Show all 9':'Show top 10');render();b.focus()});
 let qt;$('fq').addEventListener('input',e=>{clearTimeout(qt);qt=setTimeout(()=>{S.q=e.target.value.trim().toLowerCase();pg=0;render()},150)});
 $('fa').onchange=e=>{S.ag=e.target.value;pg=0;render()};$('fn').onchange=e=>{S.na=e.target.value;pg=0;render()};$('fp').onchange=e=>{S.fq=e.target.value;pg=0;render()};
 $('clr').onclick=()=>{Object.keys(S).forEach(k=>S[k]='');$('fq').value='';pg=0;open=null;render()};
