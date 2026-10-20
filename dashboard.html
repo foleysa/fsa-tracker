@@ -239,13 +239,13 @@ function kpis(rows){const v=rows.reduce((s,r)=>s+r.amt,0);const n90=rows.filter(
 function chips(){const c=Object.keys(S).filter(k=>S[k]);$('chips').innerHTML=c.length?'<span>Filtered by:</span>'+c.map(k=>`<button type="button" class="chip" data-k="${k}" data-v="" aria-label="Remove filter ${LBL[k]}: ${esc(k=='ym'?ymLong(S[k]):S[k])}">${LBL[k]}: ${esc(k=='ym'?ymLong(S[k]):k=='na'?S[k]:S[k])}<b aria-hidden="true">×</b></button>`).join(''):'';}
 function hash(){const p=new URLSearchParams();Object.keys(S).forEach(k=>S[k]&&p.set(k,S[k]));history.replaceState(null,'',p.toString()?'#'+p:location.pathname)}
 function render(){const rows=EX.filter(r=>match(r));kpis(rows);
- bars('ag','ag',EX.filter(r=>match(r,'ag')),MORE.ag?10:4,x=>x);bars('rc','rec',EX.filter(r=>match(r,'rec')),MORE.rec?10:4,x=>x);bars('na','na',EX.filter(r=>match(r,'na')),MORE.na?9:4,nl);
+ bars('ag','ag',EX.filter(r=>match(r,'ag')),MORE.ag?10:6,x=>x);bars('rc','rec',EX.filter(r=>match(r,'rec')),MORE.rec?10:6,x=>x);bars('na','na',EX.filter(r=>match(r,'na')),MORE.na?9:6,nl);
  timeline(EX.filter(r=>match(r,'ym')));table(rows);chips();$('fq').value!==S.q&&($('fq').value=S.q);$('fa').value=S.ag;$('fn').value=S.na;$('fp').value=S.fq;hash();}
 function set(k,v){const prev=document.activeElement&&document.activeElement.dataset;const fk=prev&&prev.k,fv=prev&&prev.v;S[k]=(S[k]==v?'':v);pg=0;open=null;render();
  if(fk){const el=document.querySelector(`[data-k="${fk}"][data-v="${CSS.escape(fv||'')}"]`);if(el&&el.focus)el.focus();}}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-k][data-v]');if(b&&!b.closest('th')){if(b.classList.contains('chip')){S[b.dataset.k]='';pg=0;render();const n=document.querySelector('.chip')||$('fq');n.focus();return}set(b.dataset.k,b.dataset.v);return}
  const x=e.target.closest('.xp');if(x){open=open==x.dataset.id?null:x.dataset.id;table(EX.filter(r=>match(r)));const n=document.querySelector(`.xp[data-id="${CSS.escape(x.dataset.id)}"]`);n&&n.focus();}});
-document.querySelectorAll('[data-more]').forEach(b=>b.onclick=()=>{const k=b.dataset.more;MORE[k]=!MORE[k];b.setAttribute('aria-expanded',!!MORE[k]);b.textContent=MORE[k]?'Show top 4':(k=='na'?'Show all 9':'Show top 10');render();b.focus()});
+document.querySelectorAll('[data-more]').forEach(b=>b.onclick=()=>{const k=b.dataset.more;MORE[k]=!MORE[k];b.setAttribute('aria-expanded',!!MORE[k]);b.textContent=MORE[k]?'Show top 6':(k=='na'?'Show all 9':'Show top 10');render();b.focus()});
 let qt;$('fq').addEventListener('input',e=>{clearTimeout(qt);qt=setTimeout(()=>{S.q=e.target.value.trim().toLowerCase();pg=0;render()},150)});
 $('fa').onchange=e=>{S.ag=e.target.value;pg=0;render()};$('fn').onchange=e=>{S.na=e.target.value;pg=0;render()};$('fp').onchange=e=>{S.fq=e.target.value;pg=0;render()};
 $('clr').onclick=()=>{Object.keys(S).forEach(k=>S[k]='');$('fq').value='';pg=0;open=null;render()};
