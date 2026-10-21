@@ -1,21 +1,21 @@
 section,label,amount_usd
-top_agency,Department of Homeland Security,4347146298.29
-top_agency,Department of Defense,4158345372.84
-top_agency,Department of Health and Human Services,2755056774.89
+top_agency,Department of Homeland Security,4347144904.43
+top_agency,Department of Defense,4191274651.65
+top_agency,Department of Health and Human Services,2754079591.47
 top_agency,Department of State,1135384425.0
-top_agency,Department of Veterans Affairs,795593310.39
-top_agency,General Services Administration,648701782.92
+top_agency,Department of Veterans Affairs,797501482.9
+top_agency,General Services Administration,652786843.54
 top_agency,Agency for International Development,541935456.88
-top_agency,Department of Justice,405276487.57
-top_agency,Department of Energy,388622086.79
+top_agency,Department of Justice,405276966.29
+top_agency,Department of Energy,388534074.67
 top_agency,Department of Transportation,385328126.28
-top_agency,Department of the Interior,378994668.93
-top_agency,Department of the Treasury,262436083.17
-top_agency,Department of Commerce,258178321.97
-top_agency,Department of Agriculture,254790227.56
-top_agency,National Aeronautics and Space Administration,125381933.77
+top_agency,Department of the Interior,378911177.32
+top_agency,Department of the Treasury,262440253.17
+top_agency,Department of Commerce,258181006.61
+top_agency,Department of Agriculture,254673172.36
+top_agency,National Aeronautics and Space Administration,125383531.87
 top_recipient,"AMI METALS, INC",2022176160.58
-top_recipient,DELOITTE CONSULTING LLP,791101729.66
+top_recipient,DELOITTE CONSULTING LLP,794600193.16
 top_recipient,ACQUISITION LOGISTICS LLC,608183636.04
 top_recipient,"GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",494584070.98
 top_recipient,DOMESTIC AWARDEES (UNDISCLOSED),444764595.3
@@ -29,15 +29,15 @@ top_recipient,"GENERAL ATOMICS AERONAUTICAL SYSTEMS, INC.",153602450.2
 top_recipient,RESEARCH TRIANGLE INSTITUTE,150151340.07
 top_recipient,GUIDEHOUSE LLP,137103886.29
 top_recipient,LOCKHEED MARTIN CORPORATION,130395521.57
-naics,"541614 Process, Physical Distribution & Logistics Consulting",4548071427.63
-naics,541611 Admin & General Mgmt Consulting,9754111116.4
-naics,541618 Other Mgmt Consulting,261688756.0
-naics,541690 Other Scientific & Technical Consulting,1922121789.81
+naics,"541614 Process, Physical Distribution & Logistics Consulting",4551109555.24
+naics,541611 Admin & General Mgmt Consulting,9788545371.83
+naics,541618 Other Mgmt Consulting,260737075.16
+naics,541690 Other Scientific & Technical Consulting,1923100463.47
 naics,488510 Freight Transportation Arrangement,216735111.59
-naics,493110 General Warehousing & Storage,626420198.23
-naics,4841 General Freight Trucking (484 part),37452291.36
-naics,4842 Specialized Freight Trucking (484 part),203915202.18
-month,2026-M1,119510677.34
+naics,493110 General Warehousing & Storage,626494133.19
+naics,4841 General Freight Trucking (484 part),37717780.43
+naics,4842 Specialized Freight Trucking (484 part),203893315.89999998
+month,2026-M1,120077795.91
 month,2026-M2,1087276333.73
 month,2026-M3,956672502.15
 month,2026-M4,1090778884.1
@@ -46,7 +46,7 @@ month,2026-M6,1882438305.94
 month,2026-M7,1245702509.54
 month,2026-M8,1162913649.43
 month,2026-M9,1479000372.09
-month,2026-M10,1072286260.7
+month,2026-M10,1105304847.79
 month,2026-M11,1323396827.15
-month,2026-M12,3589970158.85
-month,2027-M1,32061067.3
+month,2026-M12,3589769246.45
+month,2027-M1,36493187.65
