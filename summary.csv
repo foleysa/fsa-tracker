@@ -1,43 +1,43 @@
 section,label,amount_usd
-top_agency,Department of Homeland Security,4347144904.43
-top_agency,Department of Defense,4191274651.65
-top_agency,Department of Health and Human Services,2754079591.47
-top_agency,Department of State,1135384425.0
-top_agency,Department of Veterans Affairs,797501482.9
-top_agency,General Services Administration,652786843.54
+top_agency,Department of Homeland Security,4347132928.06
+top_agency,Department of Defense,4230169153.97
+top_agency,Department of Health and Human Services,2754348223.45
+top_agency,Department of State,1136190348.55
+top_agency,Department of Veterans Affairs,798101547.34
+top_agency,General Services Administration,652749186.92
 top_agency,Agency for International Development,541935456.88
-top_agency,Department of Justice,405276966.29
-top_agency,Department of Energy,388534074.67
-top_agency,Department of Transportation,385328126.28
-top_agency,Department of the Interior,378911177.32
-top_agency,Department of the Treasury,262440253.17
+top_agency,Department of Justice,405595045.52
+top_agency,Department of Energy,389332599.67
+top_agency,Department of Transportation,384932348.98
+top_agency,Department of the Interior,378949851.44
+top_agency,Department of the Treasury,263556873.42
 top_agency,Department of Commerce,258181006.61
-top_agency,Department of Agriculture,254673172.36
-top_agency,National Aeronautics and Space Administration,125383531.87
+top_agency,Department of Agriculture,254669434.18
+top_agency,National Aeronautics and Space Administration,125461300.32
 top_recipient,"AMI METALS, INC",2022176160.58
-top_recipient,DELOITTE CONSULTING LLP,794600193.16
+top_recipient,DELOITTE CONSULTING LLP,794583602.85
 top_recipient,ACQUISITION LOGISTICS LLC,608183636.04
 top_recipient,"GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",494584070.98
 top_recipient,DOMESTIC AWARDEES (UNDISCLOSED),444764595.3
 top_recipient,GUIDEHOUSE INC.,443902156.13
 top_recipient,GARDAWORLD FEDERAL SERVICES LLC,375186650.0
-top_recipient,BOOZ ALLEN HAMILTON INC,341316203.01
+top_recipient,BOOZ ALLEN HAMILTON INC,341321833.85
 top_recipient,"LMI CONSULTING, LLC",334532577.53
-top_recipient,KVG LLC,166173373.46
-top_recipient,"AMENTUM SERVICES, INC.",165164548.72
+top_recipient,KVG LLC,166175056.05
+top_recipient,"AMENTUM SERVICES, INC.",165257148.93
 top_recipient,"GENERAL ATOMICS AERONAUTICAL SYSTEMS, INC.",153602450.2
-top_recipient,RESEARCH TRIANGLE INSTITUTE,150151340.07
+top_recipient,RESEARCH TRIANGLE INSTITUTE,150216450.61
 top_recipient,GUIDEHOUSE LLP,137103886.29
 top_recipient,LOCKHEED MARTIN CORPORATION,130395521.57
-naics,"541614 Process, Physical Distribution & Logistics Consulting",4551109555.24
-naics,541611 Admin & General Mgmt Consulting,9788545371.83
-naics,541618 Other Mgmt Consulting,260737075.16
-naics,541690 Other Scientific & Technical Consulting,1923100463.47
-naics,488510 Freight Transportation Arrangement,216735111.59
-naics,493110 General Warehousing & Storage,626494133.19
-naics,4841 General Freight Trucking (484 part),37717780.43
-naics,4842 Specialized Freight Trucking (484 part),203893315.89999998
-month,2026-M1,120077795.91
+naics,"541614 Process, Physical Distribution & Logistics Consulting",4553828745.35
+naics,541611 Admin & General Mgmt Consulting,9808589575.56
+naics,541618 Other Mgmt Consulting,261206281.5
+naics,541690 Other Scientific & Technical Consulting,1926393714.84
+naics,488510 Freight Transportation Arrangement,216756063.37
+naics,493110 General Warehousing & Storage,626773783.44
+naics,4841 General Freight Trucking (484 part),38022668.03
+naics,4842 Specialized Freight Trucking (484 part),219214617.26
+month,2026-M1,119145022.93
 month,2026-M2,1087276333.73
 month,2026-M3,956672502.15
 month,2026-M4,1090778884.1
@@ -46,7 +46,7 @@ month,2026-M6,1882438305.94
 month,2026-M7,1245702509.54
 month,2026-M8,1162913649.43
 month,2026-M9,1479000372.09
-month,2026-M10,1105304847.79
+month,2026-M10,1145754808.82
 month,2026-M11,1323396827.15
-month,2026-M12,3589769246.45
-month,2027-M1,36493187.65
+month,2026-M12,3590553454.9
+month,2027-M1,38644433.69
