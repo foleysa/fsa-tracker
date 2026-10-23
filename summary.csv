@@ -1,52 +1,52 @@
 section,label,amount_usd
-top_agency,Department of Homeland Security,4347132928.06
-top_agency,Department of Defense,4230169153.97
-top_agency,Department of Health and Human Services,2754348223.45
-top_agency,Department of State,1136190348.55
-top_agency,Department of Veterans Affairs,798101547.34
-top_agency,General Services Administration,652749186.92
+top_agency,Department of Homeland Security,4350595735.26
+top_agency,Department of Defense,4253478987.18
+top_agency,Department of Health and Human Services,2754862568.63
+top_agency,Department of State,1135153610.08
+top_agency,Department of Veterans Affairs,797833979.58
+top_agency,General Services Administration,647411951.56
 top_agency,Agency for International Development,541935456.88
-top_agency,Department of Justice,405595045.52
-top_agency,Department of Energy,389332599.67
-top_agency,Department of Transportation,384932348.98
-top_agency,Department of the Interior,378949851.44
-top_agency,Department of the Treasury,263556873.42
-top_agency,Department of Commerce,258181006.61
-top_agency,Department of Agriculture,254669434.18
-top_agency,National Aeronautics and Space Administration,125461300.32
+top_agency,Department of Justice,405810535.76
+top_agency,Department of Energy,388813489.44
+top_agency,Department of Transportation,386664929.06
+top_agency,Department of the Interior,379036290.6
+top_agency,Department of the Treasury,263102039.92
+top_agency,Department of Commerce,258165873.35
+top_agency,Department of Agriculture,254835413.47
+top_agency,National Aeronautics and Space Administration,128799561.84
 top_recipient,"AMI METALS, INC",2022176160.58
-top_recipient,DELOITTE CONSULTING LLP,794583602.85
+top_recipient,DELOITTE CONSULTING LLP,794655065.53
 top_recipient,ACQUISITION LOGISTICS LLC,608183636.04
-top_recipient,"GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",494584070.98
-top_recipient,DOMESTIC AWARDEES (UNDISCLOSED),444764595.3
-top_recipient,GUIDEHOUSE INC.,443902156.13
+top_recipient,"GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",494582238.39
+top_recipient,GUIDEHOUSE INC.,449203731.63
+top_recipient,DOMESTIC AWARDEES (UNDISCLOSED),444682030.3
 top_recipient,GARDAWORLD FEDERAL SERVICES LLC,375186650.0
-top_recipient,BOOZ ALLEN HAMILTON INC,341321833.85
+top_recipient,BOOZ ALLEN HAMILTON INC,341466783.79
 top_recipient,"LMI CONSULTING, LLC",334532577.53
-top_recipient,KVG LLC,166175056.05
+top_recipient,KVG LLC,166185351.05
 top_recipient,"AMENTUM SERVICES, INC.",165257148.93
-top_recipient,"GENERAL ATOMICS AERONAUTICAL SYSTEMS, INC.",153602450.2
 top_recipient,RESEARCH TRIANGLE INSTITUTE,150216450.61
+top_recipient,"GENERAL ATOMICS AERONAUTICAL SYSTEMS, INC.",148516668.85
 top_recipient,GUIDEHOUSE LLP,137103886.29
-top_recipient,LOCKHEED MARTIN CORPORATION,130395521.57
-naics,"541614 Process, Physical Distribution & Logistics Consulting",4553828745.35
-naics,541611 Admin & General Mgmt Consulting,9808589575.56
-naics,541618 Other Mgmt Consulting,261206281.5
-naics,541690 Other Scientific & Technical Consulting,1926393714.84
-naics,488510 Freight Transportation Arrangement,216756063.37
-naics,493110 General Warehousing & Storage,626773783.44
-naics,4841 General Freight Trucking (484 part),38022668.03
-naics,4842 Specialized Freight Trucking (484 part),219214617.26
-month,2026-M1,119145022.93
+top_recipient,LOCKHEED MARTIN CORPORATION,136333598.57
+naics,"541614 Process, Physical Distribution & Logistics Consulting",4552049796.11
+naics,541611 Admin & General Mgmt Consulting,9855317373.49
+naics,541618 Other Mgmt Consulting,260359055.07
+naics,541690 Other Scientific & Technical Consulting,1905314228.04
+naics,488510 Freight Transportation Arrangement,216918063.37
+naics,493110 General Warehousing & Storage,629831663.15
+naics,4841 General Freight Trucking (484 part),38147361.83
+naics,4842 Specialized Freight Trucking (484 part),219762598.05
+month,2026-M1,85245102.4
 month,2026-M2,1087276333.73
 month,2026-M3,956672502.15
 month,2026-M4,1090778884.1
-month,2026-M5,2528508344.88
+month,2026-M5,2528524537.88
 month,2026-M6,1882438305.94
-month,2026-M7,1245702509.54
+month,2026-M7,1247584864.96
 month,2026-M8,1162913649.43
-month,2026-M9,1479000372.09
-month,2026-M10,1145754808.82
+month,2026-M9,1479100372.09
+month,2026-M10,1194010843.02
 month,2026-M11,1323396827.15
-month,2026-M12,3590553454.9
-month,2027-M1,38644433.69
+month,2026-M12,3590551752.39
+month,2027-M1,49206163.87
